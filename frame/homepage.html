@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content %}
+
+
+<div class="card">
+   <!---- <div class="card-header">
+      Featured
+    </div>-->
+    <div class="card-body">
+    
+      <h5 class="card-title" style="text-align: center;">WELCOME {{user.username}}!!!!!</h5>
+      <p class="card-text" style="text-align: center;">You are logged in. Click the button to back to the loggin page.  </p>
+     <center> <a href="{%  url 'userlogout' %}"  role="button" class="btn btn-primary">Logout</a></center>
+    </div>
+  </div>
+
+
+{% endblock %}
